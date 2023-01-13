@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="/script.js"></script>
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body id="body">
+  <div class="back">
+    
+  </div>
+  <main class="container">
+    <div class="header">
+      <div class="header_text">
+        <h1>Social Media Dashboard</h1>
+        <span>Total Followers: 23,004</span>
+      </div>
+      <div class="mode">
+        <span>
+          Dark Mode
+        </span>
+        <label class="switch" >
+          <input type="checkbox" name="checkbox" id="bttn" onclick="Mode()">
+          <span class="slider" ></span>
+        </label>
+      </div>
+    </div>
+    <div class="social-container">
+      <div class="social-grid">
+        <header class="grid-header">
+          <img src="./images/icon-facebook.svg" alt="">
+          <span>@nathanf</span>
+        </header>
+        <div class="stats">
+          <h1>1987</h1>
+          <span>Followers</span>
+        </div>
+        <footer class="grid-footer">
+          <img src="./images/icon-up.svg" alt="">
+          <span>12 Today</span>
+        </footer>
+      </div>
+      <div class="social-grid">
+        <header class="grid-header">
+          <img src="./images/icon-twitter.svg" alt="">
+          <span>@nathanf</span>
+        </header>
+        <div class="div stats">
+          <h1>1044</h1>
+          <span>Followers</span>
+        </div>
+        <footer class="grid-footer">
+          <img src="./images/icon-up.svg" alt="">
+          <span>99 Today</span>
+        </footer>
+      </div>
+      <div class="social-grid" id="instagram">
+        <header class="grid-header">
+          <img src="./images/icon-instagram.svg" alt="">
+          <span>@realnathanf</span>
+        </header>
+        <div class="stats">
+          <h1>11k</h1>
+          <span>Followers</span>
+        </div>
+        <footer class="grid-footer">
+          <img src="./images/icon-up.svg" alt="">
+          <span>1099 Today</span>
+        </footer>
+      </div>
+      <div class="social-grid" id="youtube">
+        <header class="grid-header">
+          <img src="./images/icon-youtube.svg" alt="">
+          <span> Nathan F.</span>
+        </header>
+        <div class="stats">
+          <h1>8239</h1>
+          <span>Subscribers</span>
+        </div>
+        <footer class="grid-footer">
+          <img src="./images/icon-down.svg" alt="">
+          <span class="negative-red">144 Today</span>
+        </footer>
+      </div>
+      
+    </div>
+    <div class="overview-social">
+      <h1 class="overview"> Overview - Today</h1>
+      <div class="overview-container">
+        <div class="overview-grid">
+          <div class="header">
+            <span>Page Views</span>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>87</h1>
+            <div class="text-score">
+              <img src="./images/icon-up.svg" alt=""><span>3%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Likes</span>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>52</h1>
+            <div class="text-score"><img src="./images/icon-down.svg" alt=""><span id="negative-red">2%</span></div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Likes</span>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>5462</h1>
+            <div class="text-score"><img src="./images/icon-up.svg" alt=""><span>2257%</span></div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Profile Views</span>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>52k</h1>
+            <div class="text-score"><img src="./images/icon-up.svg" alt=""><span>1375%</span></div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Retweets</span>
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>117</h1>
+            <div class="text-score"><img src="./images/icon-up.svg" alt=""><span>303%</span></div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Likes</span>
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>507</h1>
+            <div class="text-score"><img src="./images/icon-up.svg" alt=""><span>553%</span></div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Likes</span>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>107</h1>
+            <div class="text-score">
+              <img src="./images/icon-down.svg" alt=""><span id="negative-red">19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="header">
+            <span>Likes</span>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div class="score">
+            <h1>1407</h1>
+            <div class="text-score">
+              <img src="./images/icon-down.svg" alt=""><span id="negative-red">12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
