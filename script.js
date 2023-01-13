@@ -1,8 +1,6 @@
 'use strict'
 
 
-
-
 function Mode(){
     var input = document.getElementById('bttn')
     var back = document.querySelector('.back')
