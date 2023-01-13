@@ -322,7 +322,7 @@ input:checked + .slider:before{
     body{
         display: flex;
         width: 100vw;
-        height: 440vh;
+        height: 3000px;
     }
 
     .container{
@@ -373,3 +373,4 @@ input:checked + .slider:before{
         column-gap: 2em;
     }
 }
+
