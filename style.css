@@ -21,9 +21,9 @@ body{
     display: inline;
     position:absolute;
     width: 100vw;
-    height: 30vh;
+    height: 32vh;
     top: 0;
-    background-color: hsl(232, 19%, 15%);
+    background-color: hsl(235, 15%, 15%);
     z-index: -1;
 }
 
@@ -94,7 +94,7 @@ body{
     bottom: 0;
     transition: .4s;
     border-radius: 100px;
-    background: linear-gradient(hsl(86, 78%, 56%),hsl(146, 68%, 55%));
+    background: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     
 }
 
@@ -134,6 +134,7 @@ input:checked + .slider:before{
     width: auto;
 }
 
+
 .social-grid{
     display: flex;
     flex-direction: column;
@@ -143,8 +144,30 @@ input:checked + .slider:before{
     height: 18rem;
     background-color: hsl(228, 28%, 20%);
     border-radius: 6px;
-    border-top: 4pt solid blue;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.585);
 }
+.social-grid .border{
+    position: relative;
+    bottom:20px;
+    width: 100%;
+    height: 3pt;
+    border-radius: 8px 8px 0 0;
+}
+
+#facebook .border{
+    background-color: hsl(208, 92%, 53%);
+}
+#twitter .border{
+    background-color: hsl(203, 89%, 53%);
+}
+#instagram .border{
+    background:linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+}
+#youtube .border{
+    background-color: hsl(348, 97%, 39%);
+}
+
 .social-grid .grid-header{
     display: flex;
     align-items: center;
@@ -235,7 +258,10 @@ input:checked + .slider:before{
     background-color: hsl(228, 28%, 20%);
     border-radius: 6px;
     padding: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.585);
 }
+    
 
 .overview-grid .header{
     display: flex;
@@ -286,6 +312,31 @@ input:checked + .slider:before{
 }
 
 
+.social-grid:hover , .overview-grid:hover{
+    background-color: hsl(232, 19%, 15%);
+}
+
+
+/* active */
+
+.social-grid.active, .overview-grid.active{
+    background-color: hsl(225, 100%, 98%);
+}
+
+.social-grid.active:hover , .overview-grid.active:hover{
+    background-color: rgb(235, 236, 238);
+}
+
+.header.active h1,
+.social-grid.active .header-text, .social-grid.active h1,
+.overview-grid.active .header-text, .overview-grid.active h1{
+    color:hsl(230, 17%, 14%);
+}
+
+.social-grid.active p{
+    color: hsl(228, 12%, 44%);
+}
+
 
 @media screen and (max-width:1700px) {
 
@@ -317,7 +368,7 @@ input:checked + .slider:before{
     }
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:750px) {
 
     body{
         display: flex;
